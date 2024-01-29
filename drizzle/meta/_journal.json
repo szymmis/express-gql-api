@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1706465831812,
+      "tag": "0000_lush_ben_grimm",
+      "breakpoints": true
+    }
+  ]
+}
