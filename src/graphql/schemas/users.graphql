@@ -1,0 +1,63 @@
+type Query {
+    getUsers(sort: GetUsersSortInput, filter: GetUsersFilterInput): [User]
+    getUser(id: ID!): User
+}
+
+type Mutation {
+    createUser(data: CreateUserInput!): User
+    updateUser(id: ID!, data: UpdateUserInput!): User
+    deleteUser(id: ID!): User
+}
+
+type User {
+    id: ID!
+    first_name: String!
+    last_name: String!
+    joined_at: String!
+    date_of_birth: String!
+    salary: Int!
+    title: String!
+    department: String!
+}
+
+enum SortOrder {
+    ASC,
+    DESC
+}
+
+enum GetUsersSortKey {
+    JOINED_AT,
+    SALARY
+}
+
+input GetUsersSortInput {
+    by: GetUsersSortKey!
+    order: SortOrder!
+}
+
+input GetUsersFilterInput {
+    salary_from: Int
+    salary_to: Int
+    title: String
+    department: String
+}
+
+input CreateUserInput {
+    first_name: String!
+    last_name: String!
+    joined_at: String!
+    date_of_birth: String!
+    salary: Int!
+    title: String!
+    department: String!
+}
+
+input UpdateUserInput {
+    first_name: String
+    last_name: String
+    joined_at: String
+    date_of_birth: String
+    salary: Int
+    title: String
+    department: String
+}
