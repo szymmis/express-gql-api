@@ -16,12 +16,6 @@
   npm run dev
   ```
 
-- Generate types from GraphQL schema
-
-  ```sh
-  npm run codegen
-  ```
-
 - Visit Apollo explorer at <http://localhost:3000/graphql>
 
 ### Optionally
@@ -30,4 +24,10 @@
 
   ```sh
   npm run test
+  ```
+
+- Regenerate types from GraphQL schema
+
+  ```sh
+  npm run codegen
   ```

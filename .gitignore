@@ -176,6 +176,3 @@ dist
 
 # SQLite db files
 *.sqlite3
-
-# Generate GraphQL types
-**/generated/graphql.ts
