@@ -7,7 +7,8 @@
     "dev": "tsx watch src/main.ts",
     "test": "vitest",
     "codegen": "graphql-codegen --config codegen.config.ts",
-    "orm:generate": "drizzle-kit generate:sqlite"
+    "orm:generate": "drizzle-kit generate:sqlite",
+    "lint": "eslint src/**/*.ts"
   },
   "dependencies": {
     "@graphql-tools/merge": "^9.0.1",
